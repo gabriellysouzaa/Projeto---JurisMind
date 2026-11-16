@@ -1,0 +1,225 @@
+/* ====================================
+   JURISMIND AI - ESTILIZAÇÃO CSS
+   ==================================== */
+
+/* APARÊNCIA GERAL DA PÁGINA */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9;
+    color: #263445;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+header p {
+    margin: 8px;
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav {
+    background-color: #234a79;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #a5e4f1;
+    text-decoration: underline;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    max-width: 950px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+/* SEÇÕES DO SITE */
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #d9e2eb;
+    text-align: center;
+}
+
+/* TÍTULOS */
+h2 {
+    color: #17365d;
+    font-size: 26px;
+    text-align: center;
+}
+
+/* PARÁGRAFOS */
+section p {
+    margin: 15px 0;
+    padding: 4px;
+}
+
+/* TEXTOS EXPLICATIVOS JUSTIFICADOS */
+#produto > p:not(.destaque),
+#caracteristicas p,
+#beneficios p {
+    text-align: justify;
+}
+
+/* IMAGEM PRINCIPAL */
+img {
+    display: block;
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #cfd8e3;
+}
+
+/* TEXTO DE DESTAQUE */
+.destaque {
+    color: #136b82;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* CARTÕES DAS CARACTERÍSTICAS E BENEFÍCIOS */
+.cartoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* APARÊNCIA INDIVIDUAL DOS CARTÕES */
+.cartao {
+    padding: 15px;
+    background-color: #ecf4ff;
+    border-radius: 8px;
+}
+
+/* TÍTULOS DOS CARTÕES */
+.cartao h3 {
+    color: #17365d;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* IMAGENS DOS CARTÕES */
+.cartao img {
+    width: 100%;
+    height: auto;
+    margin: 12px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #cfd8e3;
+}
+
+/* TEXTOS DOS CARTÕES */
+.cartao p {
+    text-align: justify;
+}
+
+/* FORMULÁRIO DE CONTATO */
+form {
+    max-width: 450px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* NOMES DOS CAMPOS */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* CAMPOS NOME E E-MAIL */
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #b9c8d6;
+    border-radius: 5px;
+}
+
+/* BOTÕES DO SITE */
+button, .botao {
+    display: inline-block;
+    background-color: #1d4ed8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+button:hover, .botao:hover {
+    background-color: #17365d;
+}
+
+/* AVISO DO FORMULÁRIO */
+.aviso {
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+/* LINK EXTERNO DO RODAPÉ */
+footer a {
+    color: #bceaf5;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* ADAPTAÇÃO PARA TELAS PEQUENAS */
+@media (max-width: 600px) {
+    .cartoes {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
